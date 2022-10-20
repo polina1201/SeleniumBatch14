@@ -1,0 +1,62 @@
+************Selinium Class***********************
+1. What is Software Testing?
+    Identify correctness and quality of the application.
+
+2. Ways you can test an application?
+    a. Manual
+    b. Automation
+
+3. What the need of automation testing?
+     --Makes life easier
+     --Saves Time
+
+4. What are the tools that you can use for Automation?
+--Selenium
+--cucumber
+--TestiNG
+--Katlon Studio
+--Uft
+
+5. Types of Testing?
+--Funtional
+--Non Functional
+
+6. What is Selenium?
+--Selenium is a tool
+--that helps us to automate webApplication
+--It is mainly used for Funtional Testing
+
+7. Components of Selenium
+--Selenium IDE (not often used)
+--Selenium WebDriver (main focus)
+--Selenium Grid (rarely used)
+--Selenium RC (was replaced by WebDriver)
+
+8. What is Selenium WebDriver?
+It is a tool that allows us to perform actions on a webApplication
+It is an Interface
+
+9. Advantages:
+--Open Source
+--It works with multiple languages
+--Works with multiple browser
+--OS independent (Operating System)
+
+10. Disadvantages:
+--No technical support
+--Cannot test Desktop applications
+--No built-in reports
+--Cannot test Captchas, Images, videos
+
+Difference between driver.quit(); and driver.close();
+--close()--> it will close the current tab only
+--quit()--> it will quit the whole browser
+
+driver.get()->(opens up Chrome and navigates to website) =========driver.navigate.to() (does the same-takes to specified URL)
+
+---navigate() keeps the history of the browser
+---navigate() allows you to move forward, backward, and refresh the page
+additional options we get with navigate();
+driver.navigate().back();
+driver.navigate().forward();
+driver.navigate().refresh();
