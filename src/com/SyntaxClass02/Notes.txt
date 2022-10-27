@@ -1,0 +1,81 @@
+All the webapplication are developed using HTML
+
+HTML --->
+
+tags:
+
+<html>             (html is a parent and body is a child. button is a grandchild/ancestro of html. body is parent of button)
+    <body>
+        <button> hello </button>
+            <body>
+                </html>
+
+Every oppening tag, must have a closing tab
+
+WebElement:
+    Anything you see on a website is called a webElement
+
+
+Some Common WebElements
+1. Text Boxes
+2. Radio Buttons
+3. CheckBoxes
+4. Calendars
+5. Drop-Downs
+6. Tables
+
+Attributes
+<button>My button</button>
+text is written between the opening and closing tags.
+
+<button class="abc", id="Butn">my button</button>
+(1st button is tag. class is an attribute. "abc" is the value of the attribute class. "Butn" si the attribute of id)
+Whatever we have inside the tag is callted attribute
+----------------------------------------------------------------------------------------
+
+Locators:
+Locators help us find a particular webElement on the page
+
+-ID
+-Name
+-Tagname
+-xpath
+-linktext
+-partialLinkText
+-CSS Selector
+-ClassName
+
+The purpose of having multiple locators is because some tags might not have an Id (you can use any locator).
+Two webElements have a common locator (e.g <input id="box", name="textbox"/>
+                                        ,  <input id="box",class="btn")
+
+--------------------------Anchor Tag--------------------------------------------------
+<a> ---> anchor tag
+usually the links are placed in this tag
+if there is a text in the <a> tag, then you can use linktext locator.
+
+NOSUCH ELEMENT EXCEPTION:
+occurs when the Driver is unable to find the element on the page
+1. the locator is wrong
+2. the element is not on that page
+
+if ID is available, always use id
+
+--------------------DUPLICATE VALUES ATTRIBUTES------------------
+
+<input id="box", name="Username"/>  --->Username box
+<input id="box",class="Password"/> --->Password box
+
+driver.findElement(By.id("box")).sendKeys("hello");
+
+Driver is going to go in the DOM from top to bottom, the first tag with id box will be picked
+and keys will be sent to that.
+
+-------------------------------------------------------------------------
+1. locators -->id, name, class, partialLinkText, linktext
+2. linktext -->only when we have a link tag <a> and it has some text
+3. partial and link text --> using partial u can enter just a part of the text
+4. if there is numbers in the value of the locators, you should avoid it
+5. No such element element -->1. the locator is wrong 2. the element is on the page
+6. send the text and perform click operation
+
