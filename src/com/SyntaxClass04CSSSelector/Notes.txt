@@ -1,0 +1,21 @@
+1. CSS Selector
+
+
+
+
+RADIO BUTTON
+
+boolean     isEnabled() --> Check if the radio button can be selected or not (if not selectable, usually it's greyed out).
+boolean     isSelected()--> Cheks if the radio button is selected or not (return true if selected).
+            isDispayed()-->Checks if the webElement is displayed on the page or not
+
+1. Get the webElement
+2. Click on the WebElement
+3. Use isSelected to check if the webElement has been clicked or not
+(Go to the website, click on the webelement, check if it's been clicked or not)
+
+
+*******Get the text on the button on the console
+1. Find the element
+2. Get the text -->getText()
+3. Print it
