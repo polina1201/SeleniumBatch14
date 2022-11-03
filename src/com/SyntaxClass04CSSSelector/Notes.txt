@@ -19,3 +19,6 @@ boolean     isSelected()--> Cheks if the radio button is selected or not (return
 1. Find the element
 2. Get the text -->getText()
 3. Print it
+
+
+

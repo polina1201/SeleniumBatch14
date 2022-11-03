@@ -1,0 +1,14 @@
+For Check Boxes
+
+1. Get all the checkboxes -->using driver.getElements  ---list of WebElements
+2. Traverse through the list using a loop and get the individual EebElement
+3. Check the attribute value, if the value equals to "c"
+4. click the checkbox
+
+
+DROPDOWN
+Whenever a dropdown is made using select tag, then in Selenium, to deal with it, we can use SELECT CLASS
+
+1. find the WebElement which has the select tag             driver.findElement
+2. use select class to create an object                     Select select=new Select(WebElement of select class);
+3. select.
