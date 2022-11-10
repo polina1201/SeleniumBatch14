@@ -1,0 +1,50 @@
+***********Handling Alerts in Selenium****************
+
+What is an alert?
+Alert is the popup message that you get on your application.
+Alert takes the focus of our main screen/page.
+We can not proceed until we have ndled this alert
+
+Types of Alerts:
+1. WebBased Alert/html Alerts: We can simply inspect them and deal with them in a regular way
+
+2. Java Based alert - We can handle these alerts by using Alert Interface in selenium. Can't inspect Java alert
+    How to deal with them?
+        We use Alert interface to deal with them
+        What is the approach to use alert interface?
+            once the alert appears:
+                Alert X=driver.switchTo.alert();
+                x.Accept();
+                x.Dismiss();
+                x.SendKeys();
+                x.getText();
+
+3. Windows based alert - We cannot handle them in Selenium.
+
+Authentication Alert
+
+Information username and password inside the url
+
+Username:admin
+password:admin
+
+URL: https://the-internet.herokuapp.com/basic_auth/
+
+
+-------------FRAMES--------------
+
+1. Whenever we want to deal with an element inside a frame, can we approach it directly by standing on the main page?
+    No, we cannot
+
+2. Approach to deal with an element inside a frame
+    1. driver.SwitchTo.frame();
+    2.Then deal with that element;
+
+    XXX) Techniques to switch to a frame:
+    1. By Index; --> indexing starts from 0
+    2. By name or Id --> the name and ID in the tag "as an attribute" <iframe name='frame1", id="abc">
+    3. By WebElement -->
+        The aproach to switch using WebElement
+            1. to find the Xpath if the frame
+            2. driver findElemnt (xpath)
+            3. driver.switchTo.frame(WebElement)

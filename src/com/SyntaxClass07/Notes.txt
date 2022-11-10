@@ -1,0 +1,28 @@
+Window Handle
+
+Task: Open Gmail.com and get its windwows handle
+
+1. driver.get(gmail.com/signup)
+2. driver.getWindowHandle()
+
+driver.getWindowHandle(); - returns us the window handle of the current window.
+
+Task 2
+    1. Go to Gmail.com/signup
+    2. Click on Privacy and Help
+    3. press the button on privacy window
+
+code:
+    1. driver.get("gmail/signup.com")
+    2. click on Privacy
+    3. click on Help
+    4. driver.getWindowHandles()
+    5. loop
+        for (handel:windowHandles){
+        driver.SwitchToWindow(handle)
+        title=driver.getTitle();
+            if(title.equals("privacy"){
+            break;
+            }
+            }
+        }

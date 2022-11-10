@@ -1,0 +1,15 @@
+Radio Buttons:
+
+How to deal radio buttons:
+
+1. Find the element
+2. Click on it
+
+If you want to deal with multiple radio buttons:
+
+1. find all the elements
+2. lopp through it
+3. check for your desired one
+4. click on it
+
+*****Multi Select Drop Down vs Single Select****
