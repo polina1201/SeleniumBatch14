@@ -26,3 +26,21 @@ code:
             }
             }
         }
+
+-----------------Implicit Wait--------------
+implicit:
+driver.manage().timeouts().implicitlyWait(timeout time, Units);
+    example:
+driver.manager().timeouts().implicitlyWait(20 TimeUnit.seconds);
+
+Implicit Wait is a global wait, meaning we need to define it only once before the start of our code.
+        It's going to be waiting for every element that takes time to be found.
+
+driver.findElement(By.xpath("//button[text()='hello']"
+
+
+
+Explicit wait:
+Explicit wait until the webElement is displayed
+Explicit wait until the webElement is clickable
+Explicit wait unti the webElement is selected

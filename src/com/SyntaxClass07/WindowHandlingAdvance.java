@@ -15,7 +15,6 @@ public class WindowHandlingAdvance {
         //create a WebDriver instance
         WebDriver driver = new ChromeDriver();
 
-
         //Task : go to gmail signup and  get the window handle
 
         //go to google.com/signup
