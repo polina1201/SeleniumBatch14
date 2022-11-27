@@ -1,0 +1,19 @@
+wait for webElement to be found --> Implicit wait
+Implicit wait -->global
+
+Scenario:
+WebElement: <button id="type">button</button>
+appears in the DOM after 10 seconds
+
+
+********Explicit Wait********
+Explicit wait are conditional wait
+it will wait till a certain condidition is fulfilled or the temout runs out
+
+rough syntax:
+wait. until.webElement to be displayed()
+
+real Syntax for Explicit wait:
+
+1. Define the wait: WebDriverWait wait = new WebDriverWait(driver, 20);
+2. Condition    :   wait.until(ExpectedConditions.elementtobeVisible(By.xpath(""));

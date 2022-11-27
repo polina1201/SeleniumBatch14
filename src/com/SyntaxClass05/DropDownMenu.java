@@ -19,12 +19,12 @@ public class DropDownMenu {
         driver.get("https://syntaxprojects.com/basic-select-dropdown-demo.php");
         //maximize
         driver.manage().window().maximize();
-
         //find the WebElement dropdown by looking for select tag
         WebElement dropDown=driver.findElement(By.xpath("//select[@id='select-demo']"));
+
         //use Select class
         Select select=new Select(dropDown);
-    //select an option by index
+        //select an option by index
         select.selectByIndex(5);
         Thread.sleep(3000);
         //select by visible text

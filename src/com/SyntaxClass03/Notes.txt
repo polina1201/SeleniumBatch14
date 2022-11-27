@@ -8,7 +8,7 @@ Xpath :
 
 
  Absolute Xpath:
-                starts with starting node html and then you proceed in the hirearchy
+                starts with starting node html, then you proceed in the hirearchy
 
 Example:
 <html>
@@ -34,7 +34,7 @@ Answer:
 
 reasons not used often:
 1.too long, complicated
-2.If there is any addition in the hirearchy there is a possibility that the path isnt valid any more
+2.If there is any addition in the hirearchy, there is a possibility that the path isnt valid any more
 
 
 

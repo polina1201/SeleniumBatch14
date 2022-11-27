@@ -6,7 +6,7 @@
 RADIO BUTTON
 
 boolean     isEnabled() --> Check if the radio button can be selected or not (if not selectable, usually it's greyed out).
-boolean     isSelected()--> Cheks if the radio button is selected or not (return true if selected).
+boolean     isSelected()--> Checks if the radio button is selected or not (return true if selected).
             isDispayed()-->Checks if the webElement is displayed on the page or not
 
 1. Get the webElement
@@ -19,6 +19,17 @@ boolean     isSelected()--> Cheks if the radio button is selected or not (return
 1. Find the element
 2. Get the text -->getText()
 3. Print it
+
+*****
+    .clear(); - method is used to remove what has been written down.
+
+**** HOW TO GET ALL THE LINKS FROM THE WEBISTE AND PRINT THEM ON A CONSOLE*****
+
+<List>WebElementslinks=driver.findelements(by.Id='a'"))
+for(WebElement link:links){
+    linkValue=link.getattribute("href");
+    sout(linkValue)}
+
 
 
 

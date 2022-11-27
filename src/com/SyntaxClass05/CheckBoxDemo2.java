@@ -22,7 +22,7 @@ public class CheckBoxDemo2 {
        List<WebElement> checkBoxes =driver.findElements(By.xpath("//input[@class='cb1-element']"));
        //traverse through list of checkboxes to find the desired one
         for (WebElement checkBox:checkBoxes) {
-            //get the attribute value to check if thei is the right option to select
+            //get the attribute value to check if this is the right option to select
             String optionName = checkBox.getAttribute("value");
             //if condition to make sure it is the right checkbox
             if (optionName.equalsIgnoreCase("Option-3")) {

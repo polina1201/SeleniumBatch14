@@ -2,13 +2,29 @@ For Check Boxes
 
 1. Get all the checkboxes -->using driver.getElements  ---list of WebElements
 2. Traverse through the list using a loop and get the individual EebElement
-3. Check the attribute value, if the value equals to "c"
+3. Check the attribute value, if the value equals to "c"       ********Remember getAttribute ();
 4. click the checkbox
 
 
-DROPDOWN
-Whenever a dropdown is made using select tag, then in Selenium, to deal with it, we can use SELECT CLASS
 
+DROPDOWN
+1.Whenever a dropdown is made using select tag, then in Selenium, to deal with it, we can use SELECT CLASS
+2. In order to use Select Class
+    Select sel=newSelect(WebElement)
+    Where WebElement is the select tag in your DOM
+3. Now you can use methods available to you in Selelct class to select any option from drop-down
+    a) sel.selectByIndex(int) -->where index is the index of option (sel.selectByIndex(5) - fifth option)
+    b) sel.selectByValue(String value)-->where Value is the value of attribute "value" in the DOM
+    c) sel.selectByVisibleText(String text)-->where text is the text in the option tag
+
+4. In order to get all available options using Select Class, you can use se.getallOptions()-->returns a list of WebElements
+
+    Single Select Drop-Down
 1. find the WebElement which has the select tag             driver.findElement
 2. use select class to create an object                     Select select=new Select(WebElement of select class);
 3. select.
+
+
+Polina's Notes***************
+
+Select Class is created in Selenium to deal with the drop-downs
